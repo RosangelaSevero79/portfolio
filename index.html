@@ -6,55 +6,205 @@
     -Pelo menos três tags de formatação de texto
     -Link para o Linkedin
     -Uma foto usando a tag "img"
--->
+-->        
 
-<html><!-- Tag de abertura  -->
-    <head>
-        <title>
-           Rosângela Severo
-        </title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="pt-br"> <!--Seleciona o idioma-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosângela de Andrade Severo</title>
+</head>
+<body>
 
-        <h1>
-            Rosângela de Andrade Severo
-        </h1>
-        
-        <h2>
-            Meu background profissional e pessoal
-        </h2>
+    <header>
+        <h1>Rosângela de Andrade Severo</h1>
+    </header>
 
-          <!-- 
+    <section>
+        <h2>Foto</h2>
+        <img src="images\Foto_Rosangela.png" alt="Sua Foto" width="300">
+    </section>
+
+     <!-- 
             i -> Deixar em itálico
             em -> enfatizar
             u -> Sublinhar
             s -> Riscado
             ...
          -->
-        <div>
-            <img width="100" src="images\Foto_Rosangela.png"/> 
-        </div>
-        <div id="primeira">
-            <p>
-                Meu nome é <u>Rosângela de Andrade Severo,</u> tenho 44 anos, estudante de engenharia de software,<br/>
-                trabalho na área do transporte público urbano há quase 14 anos, sou casada e tenho um filho pequeno. <br/>
-            </p>
-            <p>
-                Iniciei o meu contato com a tecnologia na <i>década de 90</i> e a partir de então fui aprendendo e <br/>
-                aplicando os conhecimentos tecnológicos na minha <em>vida pessoal, acadêmica e profissional.</em> <br />    
-            </p>
-            <p>
-               Não há como fugir da tecnologia, ela está em tudo o que vamos fazer. Quanto mais praticamos, <br/>
-               mais adquirimos conhecimento, habilidade e agilidade.
-            </p>   
-            <p>
-               Participar desse curso me trouxe uma imensa felicidade e expectativa de trabalhar na área de Front-End.
-            </p>
-            <p>   
-               Estou amando o curso da Ada, apesar de ter muita dificuldade para desenvolver na prática. Quero muito me profissionalizar nessa área e fazer a minha transição de carreira. 
-            </p>
 
-            <a href="https://www.linkedin.com/in/rosângela-severo" target="_blank">Ir para Linkedin</a>
-        </div>
-    </body>
+    <section>
+        <h2>Sobre Mim</h2>
+        <p>
+            Olá! Sou <u>Rosângela Severo</u>, e esta é minha página pessoal e profissional. <br/>
+         Atuo na área de transporte público e estou almejando migrar para a área de tecnologia. <br/>
+         Tenho uma paixão por códigos e estou ansiosa para aprender sobre Front-End no <br/>
+         Programa Santander Coders 2023 - Ada. A minha expectativa com o curso é me formar e atuar na área.
+        </p>
+    </section>
+
+    <section>
+        <h2>Experiência Profissional</h2>
+        <p>
+            Atualmente sou <i>Agente de Gestão Operacional do Transporte Público</i>. Atuo na área há quase quatorze anos.
+        </p>
+    </section>
+
+    <section>
+        <h2>Formação Acadêmica</h2>
+        <p>Atualmente estou estudando Engenharia de Software na Ampli e Front-End na Ada.</p>
+    </section>
+
+    <section>
+        <h2>Contato</h2>
+        <p>Você pode me encontrar no <a href="https://www.linkedin.com/in/rosângela-severo">Ir para o Linkedin</a>.</p>
+    </section>
+
+</body>
 </html> <!-- Tag de fechamento  -->
+
+
+
+
+
+<hr/>
+
+        <!--Atividade de Fixação 2 (escopo fechado)
+        . Criar um formulário;
+        . Utilizar labels com for para cada input;
+        . Utilizar as propriedades id e name;
+        . Utilizar pelo menos 5 tipos de inputs diferentes;
+            Criar uma lista ordenada e uma lista não ordenada-->        
+
+
+
+        <!--Este código cria um formulário simples com diferentes tipos de inputs, usa labels com os atributos for, <br/>
+        utiliza id e name para cada input, e inclui uma lista ordenada e uma lista não ordenada no final da página. <br/>
+        Lembre-se de personalizar conforme necessário.-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> 
+
+    <!--O trecho <meta charset="UTF-8"> é uma meta tag no cabeçalho (head) de um documento HTML e especifica a <br/>
+        codificação de caracteres utilizada na página. Neste caso, a codificação é definida como UTF-8.
+
+        UTF-8 (Unicode Transformation Format - 8 bits) é uma codificação de caracteres que é capaz de representar <br/>
+        praticamente todos os caracteres do mundo, incluindo caracteres especiais e acentuados utilizados em várias línguas. <br/>
+        É amplamente adotado na web por ser uma codificação flexível e compatível com uma ampla variedade de caracteres.
+
+        Ao definir charset="UTF-8", você está assegurando que o navegador interprete corretamente os caracteres especiais <br/>
+        e acentuados em sua página HTML, garantindo a correta exibição do conteúdo para os usuários, independentemente do <br/>
+        idioma utilizado. Isso é particularmente importante para páginas que podem conter texto em diferentes idiomas.-->
+
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Formulário</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 20px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0e8d14;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0e8d14;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ol {
+            list-style-type: decimal;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="18" required>
+
+        <label for="cidade">Cidade onde nasceu:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="Estado">Estado:</label>
+        <input type="text" id="estado" name="estado" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <label for="interesse">Interesse:</label>
+        <select id="interesse" name="interesse" required>
+            <option value="frontend">Desenvolvimento Frontend</option>
+            <option value="backend">Desenvolvimento Backend</option>
+            <option value="design">Design Gráfico</option>
+            <option value="analytics">Análise de Dados</option>
+            <option value="outro">Outro</option>
+        </select>
+
+        <button type="submit">Enviar</button> <!--Botão "Enviar" criado-->
+    </form>
+
+    <h2>Lista Ordenada</h2> <!--Tamanho da fonte 2-->
+    <ol>
+        <li>1 HTML</li>
+        <li>2 CSS </li>
+        <li>3 ...</li>
+    </ol>
+
+    <h2>Lista Não Ordenada</h2>
+    <ul>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ul>
+
+</body>
+</html>
